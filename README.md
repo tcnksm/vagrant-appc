@@ -19,6 +19,7 @@ $ rkt help
 
 ## Author
 
+[John Brooker](https://github.com/brookerj11211)
 [tcnksm](https://github.com/tcnksm)
 
 
