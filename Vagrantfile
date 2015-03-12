@@ -30,7 +30,7 @@ export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
 # echo 'export GOPATH=/home/vagrant/gopath' >> /home/vagrant/.bashrc
 # echo 'export PATH=$GOROOT/bin:$GOPATH/bin:$PATH' >> /home/vagrant/.bashrc
 
-RKTVERSION="v0.3.2"
+RKTVERSION="v0.4.0"
 echo "Install Rocket ${RKTVERSION}"
 cd /tmp
 wget https://github.com/coreos/rocket/releases/download/${RKTVERSION}/rocket-${RKTVERSION}.tar.gz
@@ -48,6 +48,8 @@ go get github.com/appc/docker2aci
 
 echo "Install goaci"
 go get github.com/appc/goaci
+
+sudo cp ${GOPATH}/bin/* /usr/local/bin/.
 EOF
-  
+
 end
